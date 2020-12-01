@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".HomeScreen">
+
+    <ImageView
+        android:id="@+id/but2"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:onClick="toForum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but1"
+        app:srcCompat="@drawable/but" />
+
+    <ImageView
+        android:id="@+id/but3"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:onClick="toShop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but2"
+        app:srcCompat="@drawable/but" />
+
+    <ImageView
+        android:id="@+id/but4"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:onClick="toWeb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but3"
+        app:srcCompat="@drawable/but" />
+
+    <ImageView
+        android:id="@+id/but1"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:onClick="toMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points"
+        app:srcCompat="@drawable/but" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Map"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/but1"
+        app:layout_constraintEnd_toEndOf="@+id/but1"
+        app:layout_constraintStart_toStartOf="@+id/but1"
+        app:layout_constraintTop_toTopOf="@+id/but1" />
+
+    <TextView
+        android:id="@+id/forum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Forum"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/but2"
+        app:layout_constraintEnd_toEndOf="@+id/but2"
+        app:layout_constraintStart_toStartOf="@+id/but2"
+        app:layout_constraintTop_toTopOf="@+id/but2" />
+
+    <TextView
+        android:id="@+id/Shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Shop"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/but3"
+        app:layout_constraintEnd_toEndOf="@+id/but3"
+        app:layout_constraintStart_toStartOf="@+id/but3"
+        app:layout_constraintTop_toTopOf="@+id/but3" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Hello User"
+        android:textColor="@android:color/white"
+        android:textSize="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0 Points"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello" />
+
+    <TextView
+        android:id="@+id/Website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/but4"
+        app:layout_constraintEnd_toEndOf="@+id/but4"
+        app:layout_constraintStart_toStartOf="@+id/but4"
+        app:layout_constraintTop_toTopOf="@+id/but4" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:onClick="toMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

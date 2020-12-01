@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="75dp"
+        android:clickable="true"
+        android:onClick="TOLOGIN"
+        android:text="Login"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="55dp"
+        android:clickable="true"
+        android:onClick="REGISTER"
+        android:text="Register"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="32dp"
+        android:text="Instructions"
+        android:clickable="true"
+        android:onClick="toIns"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/InfoButton"
+        app:layout_constraintTop_toBottomOf="@+id/Register" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="55dp"
+        android:clickable="true"
+        android:onClick="TOWEB"
+        android:text="Website"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/instructions" />
+
+    <ImageButton
+        android:id="@+id/LogButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:onClick="TOLOGIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/enter" />
+
+    <ImageButton
+        android:id="@+id/RegButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:onClick="REGISTER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogButton"
+        app:srcCompat="@drawable/regbut" />
+
+    <ImageButton
+        android:id="@+id/InfoButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="93dp"
+        android:clickable="true"
+        android:onClick="toIns"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/instructions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegButton"
+        app:srcCompat="@drawable/infologo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="116dp"
+        android:background="@android:color/transparent"
+        android:onClick="TOWEB"
+        app:layout_constraintEnd_toStartOf="@+id/website"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InfoButton"
+        app:srcCompat="@drawable/nzlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

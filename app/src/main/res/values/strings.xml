@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SmartNess</string>
+    <string name="title_activity_register">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="google_maps_API_key" translatable="false">AIzaSyA0kvFgU5KvgllgomdJduDYvxQAE_w9zrU</string>
+    <string-array name="Types">
+        <item>Resident</item>
+        <item>Volunteer</item>
+    </string-array>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_map">Map</string>
+    <string name="ins">
+        שלום וברוכים הבאים!
+SmartNess היא רשת חברתית
+ המקשרת בין התושב לעירייה
+ובין תושב לתושב של עירנו.
+באפליקציה, אנחנו נותנים שירות אש
+ר מספק הודעה על מפגעים, התנדבויות
+ ואירועיים עירוניים באמצעות מפה וממשק
+ אינטרקטיבי. לאחר ההתחברות ניתן לבחור
+ ממספר אופציות שונות:
+מפה- בה תוכלו לדווח על מפגע ולמצוא
+ על מפגעים בסביבתיכם.
+פורום- בו תוכלו לדבר עם התושבים,
+והעירייה תוכל לפרסם אירועים והודעות לגבי כלל העיר.
+חנות- בה תוכלו לקנות הטבות בתמורה לנקודות שתקבלו
+כאשר תהיו פעילים באפליקציה, תדווחו ותעזרו לטפל במפגעים.
+אתר- אתר העירייה
+אנו מקווים שתהיה לכם חווית שימוש מהנה ונוחה!
+    </string>
+</resources>
